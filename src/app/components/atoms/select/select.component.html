@@ -1,0 +1,9 @@
+<select
+    class="select"
+    [formControl]="formControl"
+    (change)="handlerValueChange($event)">
+    <option
+        *ngFor="let option of options" [value]="option.id">
+        {{option.name}}
+    </option>
+</select>

@@ -1,0 +1,30 @@
+<div class="home">
+    <!-- start: logo -->
+    <div class="home__logo">
+        <img class="home__logo-img" src="assets/img/logo.png"
+            alt="Logo Rick and Morty">
+    </div>
+    <!-- end: logo -->
+    <!-- start: content -->
+    <div #panel class="home__content">
+        <!-- start: filters -->
+        <app-filters
+            (filtersEvent)="handlerFiltersCharacters($event)">
+        </app-filters>
+        <!-- start: filters -->
+        <!-- start: characters -->
+        <app-characters
+            [characters]="characters">
+        </app-characters>
+        <!-- end: characters -->
+        <!-- start: pagination -->
+        <app-pagination
+            *ngIf="pagination"
+            [pagination]="pagination"
+            [currentPage]="page"
+            (changePageEvent)="handlerChangePage($event)">
+        </app-pagination>
+        <!-- end: pagination -->
+    </div>
+    <!-- end: content -->
+</div>
