@@ -7,7 +7,6 @@
 3. Dirección: `http://localhost:4200/`
 
 ## Captures:
-
-[aquí]([https://duckduckgo.com](https://drive.google.com/file/d/1I0t35UYwhIlXgteV9wVlzQdYkvc0s2Im/view?usp=share_link)).
+[Captures de la aplicación](https://drive.google.com/drive/folders/1en3TOhOf37Mo8g5XShxdpFcyKOm8pnYw?usp=share_link)
 
 
