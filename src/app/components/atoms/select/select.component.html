@@ -1,4 +1,6 @@
+<label *ngIf="label" for="select" class="select__label">{{ label }}</label>
 <select
+    id="select"
     class="select"
     [formControl]="formControl"
     (change)="handlerValueChange($event)">

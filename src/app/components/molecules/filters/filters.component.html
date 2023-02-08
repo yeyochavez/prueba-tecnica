@@ -4,6 +4,7 @@
       <!-- start: filter by name -->
       <app-input
          class="filters__input"
+         label="Filtrar por nombre"
          placeholder="Buscar por nombre"
          [formControl]="nameControl">
       </app-input>
@@ -11,6 +12,7 @@
       <!-- start: filter by status -->
       <app-select
          class="filters__select"
+         label="Filtrar por estado"
          [formControl]="statusControl"
          [options]="statusOptions"
          (valueChange)="handlerStatusChange($event)">

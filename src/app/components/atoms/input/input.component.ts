@@ -19,7 +19,8 @@ export class InputComponent {
 
   constructor(
     @Self() private control: NgControl,
-    @Attribute('placeholder') public placeholder: string
+    @Attribute('placeholder') public placeholder: string,
+    @Attribute('label') public label: string
   ) {
     this.control.valueAccessor = this;
   }
