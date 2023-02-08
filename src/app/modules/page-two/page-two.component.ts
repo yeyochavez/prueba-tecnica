@@ -1,18 +1,18 @@
-import { HttpParams } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { CharactersService } from '../../shared/https/characters.service';
 import { ICharacter } from '../../shared/interfaces/character.interface';
 import { IPagination } from '../../shared/interfaces/pagination.interface';
-import { IResponse } from '../../shared/interfaces/reponse.interface';
-import { LoadingBarService } from '../../shared/services/loading-bar.service';
 import { IFilterCharacter } from '../../shared/interfaces/filter-character.interface';
+import { CharactersService } from '../../shared/https/characters.service';
+import { LoadingBarService } from '../../shared/services/loading-bar.service';
+import { IResponse } from '../../shared/interfaces/reponse.interface';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-page-two',
+  templateUrl: './page-two.component.html',
+  styleUrls: ['./page-two.component.scss']
 })
-export class HomeComponent {
+export class PageTwoComponent  {
 
   characters: ICharacter[] = [];
 

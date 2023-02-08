@@ -1,12 +1,13 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IPagination } from '../../../shared/interfaces/pagination.interface';
 
 @Component({
-  selector: 'app-pagination',
-  templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.scss'],
+  selector: 'app-pagination-simple',
+  templateUrl: './pagination-simple.component.html',
+  styleUrls: ['./pagination-simple.component.scss']
 })
-export class PaginationComponent {
+export class PaginationSimpleComponent {
+
   @Input() pagination?: IPagination;
 
   @Input() currentPage = 1;
@@ -27,4 +28,5 @@ export class PaginationComponent {
   handlerPrevPage(): void {
     this.changePageEvent.emit(--this.currentPage);
   }
+
 }

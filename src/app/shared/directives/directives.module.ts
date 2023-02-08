@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ImgSrcDirective } from './img-src.directive';
 
 @NgModule({
-  declarations: [ImgSrcDirective],
+  declarations: [ImgSrcDirective ],
   imports: [CommonModule],
   exports: [ImgSrcDirective],
 })

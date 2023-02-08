@@ -1,6 +1,6 @@
 @import "../../../assets/variables/mixins.scss";
 
-.home {
+.page-two {
     width: 100%;
     backdrop-filter: blur(10px);
     display: flex;
@@ -9,14 +9,14 @@
     justify-content: center;
 }
 
-.home__logo {
+.page-two__logo {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
 
-.home__logo-img {
+.page-two__logo-img {
     width: 60%;
     margin: 20px;
     @include tablet {
@@ -27,7 +27,7 @@
     }
 }
 
-.home__content {
+.page-two__content {
     width: 90%;
     margin: 0 auto;
 }

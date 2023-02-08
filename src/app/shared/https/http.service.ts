@@ -12,4 +12,8 @@ export class HttpService<T> {
   async filter(params: HttpParams): Promise<T> {
     return this.httpClient?.get<any>(this.apiUrl, { params }).toPromise();
   }
+
+  async getAll(): Promise<T> {
+    return this.httpClient?.get<any>(this.apiUrl).toPromise();
+  }
 }

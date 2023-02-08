@@ -3,10 +3,11 @@
     margin: 3px 20px;
     background: #fff;
     border: 3px solid #e07d04;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 30px;
     transition-duration: 0.2s;
     color: #e07d04;
+    min-width: 50px;
 }
 
 .button[disabled] {

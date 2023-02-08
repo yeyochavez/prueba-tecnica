@@ -3,17 +3,27 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('../app/modules/home/home.module').then((m) => m.HomeModule),
+    path: 'two',
+    loadChildren: () =>
+      import('../app/modules/page-two/page-two.module').then(
+        (m) => m.PageTwoModule
+      ),
+  },
+  {
+    path: 'one',
+    loadChildren: () =>
+      import('../app/modules/page-one/page-one.module').then(
+        (m) => m.PageOneModule
+      ),
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'one',
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,12 +1,12 @@
-<div class="home">
+<div class="page-two">
     <!-- start: logo -->
-    <div class="home__logo">
-        <img class="home__logo-img" src="assets/img/logo.png"
+    <div class="page-two__logo">
+        <img class="page-two__logo-img" src="assets/img/logo.png"
             alt="Logo Rick and Morty">
     </div>
     <!-- end: logo -->
     <!-- start: content -->
-    <div #panel class="home__content">
+    <div class="page-two__content">
         <!-- start: filters -->
         <app-filters
             (filtersEvent)="handlerFiltersCharacters($event)">
@@ -18,12 +18,12 @@
         </app-characters>
         <!-- end: characters -->
         <!-- start: pagination -->
-        <app-pagination
+        <app-pagination-simple
             *ngIf="pagination"
             [pagination]="pagination"
             [currentPage]="page"
             (changePageEvent)="handlerChangePage($event)">
-        </app-pagination>
+        </app-pagination-simple>
         <!-- end: pagination -->
     </div>
     <!-- end: content -->

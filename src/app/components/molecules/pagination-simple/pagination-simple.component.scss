@@ -1,6 +1,6 @@
 @import "../../../../assets/variables/mixins.scss";
 
-.pagination {
+.pagination-simple {
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
@@ -17,7 +17,7 @@
     }
 }
 
-.pagination__text {
+.pagination-simple__text {
     display: none;
     @include tablet {
         display: block;

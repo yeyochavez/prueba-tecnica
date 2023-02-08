@@ -14,4 +14,9 @@ export class CharactersService extends HttpService<IResponse> {
     this.httpClient = _httpClient;
     this.apiUrl = ENDPOINTS.characters;
   }
+
+  async filterByIds(ids: number[]): Promise<Array<ICharacter>> {
+    const url = this.apiUrl + ids?.join(',');
+    return this.httpClient?.get<any>(url).toPromise();
+  }
 }
